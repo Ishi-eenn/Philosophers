@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 09:15:18 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:51:33 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 09:59:26 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,3 @@ bool	init_mutex_and_check(t_data *data)
 	}
 	return (true);
 }
-

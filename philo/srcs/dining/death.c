@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:10:12 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:54:26 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 09:59:14 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,9 @@ void	*monitor_death(void *arg)
 			if (get_time(get_time_last_eaten(&data->philos[i]))
 				> (u_int64_t)data->time_to_die)
 			{
-				return (print_state(&data->philos[i], "died"),
-					set_exit(data), NULL);
+				print_state(&data->philos[i], "died");
+				set_exit(data);
+				return (NULL);
 			}
 			i++;
 		}
