@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 00:42:52 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/20 14:56:04 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 19:15:47 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,9 @@ bool	dining(t_data *data);
 
 // eat.c
 void	set_time_last_eaten(t_philo *philo);
-void	ft_increment_eat_count(t_philo *philo);
-int		ft_get_eat_count(t_philo *philo);
-void	*monitor_rat_count_limit(void *arg);
+void	increment_eat_count(t_philo *philo);
+int		get_eat_count(t_philo *philo);
+void	*monitor_eat_count_limit(void *arg);
 
 // routine.c
 void	*routine(void *arg);

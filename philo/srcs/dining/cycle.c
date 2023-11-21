@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 13:49:42 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:54:24 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 19:13:43 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ bool	eating_cycle(t_philo *philo)
 bool	sleeping_cycle(t_philo *philo)
 {
 	print_state(philo, "is sleeping");
-	ft_increment_eat_count(philo);
+	increment_eat_count(philo);
 	if (is_exit(philo->data))
 		return (false);
 	ft_wait(philo->data->time_to_sleep);

@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 13:55:02 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:54:12 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 19:13:29 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static bool	should_continue_dining(t_philo *philo)
 	{
 		if (philo->data->eat_limit < 0)
 			return (true);
-		if (ft_get_eat_count(philo) < philo->data->eat_limit)
+		if (get_eat_count(philo) < philo->data->eat_limit)
 			return (true);
 	}
 	return (false);
