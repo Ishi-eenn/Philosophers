@@ -1,8 +1,8 @@
 NAME		=	philo
 CC			=	cc
 INCLUDE		=	-I./includes
-# FLAGS		=	-Wall -Wextra -Werror -pthread
-FLAGS		=	-Wall -Wextra -Werror -pthread -fsanitize=thread
+FLAGS		=	-Wall -Wextra -Werror -pthread
+# FLAGS		=	-Wall -Wextra -Werror -pthread -g -fsanitize=thread
 RM			=	rm -rf
 
 UTILS_DIR	=	utils
