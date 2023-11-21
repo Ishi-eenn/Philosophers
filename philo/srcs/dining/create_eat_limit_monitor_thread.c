@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 02:16:23 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:54:18 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 19:15:47 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static bool	create_eat_limit_monitor_thread(t_data *data)
 	if (data->eat_limit > 0 && data->num_of_philo > 1)
 	{
 		if (pthread_create(&data->monitor_eat_limit,
-				NULL, &monitor_rat_count_limit, data))
+				NULL, &monitor_eat_count_limit, data))
 			return (false);
 	}
 	return (true);
