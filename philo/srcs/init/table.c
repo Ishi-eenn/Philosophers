@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 09:16:00 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/21 09:07:42 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 09:18:40 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	pthread_join_for_philosophers_threads(t_data *data)
 
 static void	release_used_mutexes(t_data *data)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < data->num_of_philo)
