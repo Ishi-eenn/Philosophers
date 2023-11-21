@@ -6,7 +6,7 @@
 /*   By: tsishika <tsishika@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:47:01 by tsishika          #+#    #+#             */
-/*   Updated: 2023/11/20 02:10:51 by tsishika         ###   ########.fr       */
+/*   Updated: 2023/11/21 09:49:02 by tsishika         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,6 @@
 
 # include <pthread.h>
 # include <stdbool.h>
-
-enum e_return
-{
-	RETURN_SUCCESS,
-	RETURN_FAILURE
-};
 
 typedef struct s_data		t_data;
 
