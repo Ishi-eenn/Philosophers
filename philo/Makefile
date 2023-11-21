@@ -23,6 +23,7 @@ INPUT		=	is_arguments.c \
 				is_count.c \
 				is_numeric.c \
 				input.c \
+				is_integer_arguments.c \
 				is_eating_limit.c
 INPUTS		=	$(addprefix $(INPUT_DIR)/, $(INPUT))
 
